@@ -7,6 +7,7 @@ import boy from "../../assets/boy.png"
 import { useRef, useState } from "react"
 import { MdEdit } from "react-icons/md";
 import vadivelu from "../../assets/no data.png"
+
 const Studentdetails = () => {
 
 	 const queryClient = useQueryClient()
@@ -84,8 +85,7 @@ const Studentdetails = () => {
     return (
 
         <>
-            {
-                students ?  
+        
                     <div className="flex flex-wrap items-center justify-center p-2 gap-10 mt-10 mb-10">
                         {student1.map((student)=>(
                                 <div className="max-w-80 bg-black text-white rounded-2xl">
@@ -119,7 +119,7 @@ const Studentdetails = () => {
                                         </Link>
                                     </div>
                                 </div>
-                        ))}:
+                        ))}
 
                         {student2.map((student)=>(
                                 <div className="max-w-80 bg-black text-white rounded-2xl">
@@ -286,7 +286,7 @@ const Studentdetails = () => {
                                 </div>
                         ))} 
                     </div>    
-            : <img src={vadivelu} alt="No data" />}
+           
 
                     
     

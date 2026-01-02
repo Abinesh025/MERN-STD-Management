@@ -85,7 +85,7 @@ const Studentdetails = () => {
     return (
         
                     <div className="flex flex-wrap items-center justify-center p-2 gap-10 mt-10 mb-10">
-                        {student1.map((student)=>(
+                        {student1?.map((student)=>(
                                 <div className="max-w-80 bg-black text-white rounded-2xl">
                                     <div className="relative -mt-px overflow-hidden rounded-2xl">
                                     <img src={ student?.ProfileImage || boy}  className="h-[270px] w-full rounded-2xl hover:scale-105 transition-all duration-300 object-cover object-top"/>  	
@@ -119,7 +119,7 @@ const Studentdetails = () => {
                                 </div>
                         ))}
 
-                        {student2.map((student)=>(
+                        {student2?.map((student)=>(
                                 <div className="max-w-80 bg-black text-white rounded-2xl">
                                     <div className="relative -mt-px overflow-hidden rounded-2xl">
                                         <img src={ProfileImage ||student?.ProfileImage || boy} alt="" className="h-[270px] w-full rounded-2xl hover:scale-105 transition-all duration-300 object-cover object-top" />
@@ -146,7 +146,7 @@ const Studentdetails = () => {
                                 </div>
                         ))}
 
-                        {student3.map((student)=>(
+                        {student3?.map((student)=>(
                                 <div className="max-w-80 bg-black text-white rounded-2xl">
                                     <div className="relative -mt-px overflow-hidden rounded-2xl">
                                     <img src={ProfileImage || student?.ProfileImage || boy}  className="h-[270px] w-full rounded-2xl hover:scale-105 transition-all duration-300 object-cover object-top"/>  	
@@ -181,7 +181,7 @@ const Studentdetails = () => {
                                 </div>
                         ))}
 
-                        {student4.map((student)=>(
+                        {student4?.map((student)=>(
                                 <div className="max-w-80 bg-black text-white rounded-2xl">
                                     <div className="relative -mt-px overflow-hidden rounded-2xl">
                                         <img src={ProfileImage ||student?.ProfileImage || boy} alt="" className="h-[270px] w-full rounded-2xl hover:scale-105 transition-all duration-300 object-cover object-top" />
@@ -215,7 +215,7 @@ const Studentdetails = () => {
                                 </div>
                         ))}
 
-                        {student5.map((student)=>(
+                        {student5?.map((student)=>(
                                 <div className="max-w-80 bg-black text-white rounded-2xl">
                                     <div className="relative -mt-px overflow-hidden rounded-2xl">
                                     <img src={ProfileImage || student?.ProfileImage || boy}  className="h-[270px] w-full rounded-2xl hover:scale-105 transition-all duration-300 object-cover object-top"/>  	
@@ -250,7 +250,7 @@ const Studentdetails = () => {
                                 </div>
                         ))}
 
-                        {student6.map((student)=>(
+                        {student6?.map((student)=>(
                                 <div className="max-w-80 bg-black text-white rounded-2xl">
                                     <div className="relative -mt-px overflow-hidden rounded-2xl">
                                         <img src={ProfileImage ||student?.ProfileImage || boy} alt="" className="h-[270px] w-full rounded-2xl hover:scale-105 transition-all duration-300 object-cover object-top" />

@@ -60,7 +60,7 @@ const EditUser = () => {
       { user ? <>
                     <div className='text-center md:text-left mt-12'>
                  
-                     <img className="h-90 w-90 rounded-lg" src={user?.ProfileImage} alt="userImage1" />
+                     <img className="h-90 w-90 rounded-lg" src={user?.ProfileImage || boy} alt="userImage1" />
                 </div>
                  <div className='fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none mb-10 size-140 bg-green-500/35 rounded-full  h-full blur-[200px]'></div>
 

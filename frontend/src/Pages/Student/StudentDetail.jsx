@@ -83,8 +83,6 @@ const Studentdetails = () => {
 
  
     return (
-
-        <>
         
                     <div className="flex flex-wrap items-center justify-center p-2 gap-10 mt-10 mb-10">
                         {student1.map((student)=>(
@@ -285,14 +283,7 @@ const Studentdetails = () => {
                                     </div>
                                 </div>
                         ))} 
-                    </div>    
-           
-
-                    
-    
-
-
-        </>
+                    </div>   
     )
 }
 

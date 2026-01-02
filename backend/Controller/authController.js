@@ -61,8 +61,8 @@ export const getLogin = async(req,res)=>{
         }
 
         if(user){
-            getToken(user.id,res);
-            return res.status(200).json({
+            getToken(user._id,res);
+             res.status(200).json({
                 User:user.User
             });
         }

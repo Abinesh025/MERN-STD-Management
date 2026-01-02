@@ -1,9 +1,9 @@
-import jasonwebtoken from "jsonwebtoken"
+import jasonToken from "jsonwebtoken"
 
 export const getToken = async(userID,res)=>{
     try
     {
-        const token = jasonwebtoken.sign({userID},process.env.Token_key,{
+        const token = jasonToken.sign({userID},process.env.TOKEN_KEY,{
             expiresIn:"15d"
         });
 
@@ -14,6 +14,6 @@ export const getToken = async(userID,res)=>{
         })
     }
     catch(error){
-        return res.status(400).json({error:"Token not Found"})
+        return res.status(400).json({error:"Token not Found in cookies"})
     }
 }

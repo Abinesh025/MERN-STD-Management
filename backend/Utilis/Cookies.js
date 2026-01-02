@@ -4,7 +4,7 @@ export const getToken = async(userID,res)=>{
     try
     {
         const token = jasonToken.sign({userID},process.env.TOKEN_KEY,{
-            expiresIn:"15d"
+            expiresIn:"15D"
         });
 
         res.cookie("JWT",token,{

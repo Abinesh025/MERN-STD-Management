@@ -97,10 +97,10 @@ export const getLogout = async(req,res)=>{
 export const getMe = async(req,res)=>{
     try
     {
-        const user = await autherModel.findOne({_id:req.user._id}).select("-Password");
+        const user = await autherModel.findById({_id:req.user._id}).select("-Password");
 
         if(!user){
-            return res.status(200).json({error:"User not found"});
+            return res.status(400).json({error:"User not found"});
         }
 
         return res.status(200).json(user);

@@ -12,7 +12,7 @@ export const protectRoutes = async(req,res,next)=>{
             return res.status(400).json({error:"Token Not Found"})
         }
 
-        const decode =  jsonwebtoken.verify(token,process.env.Token_key);
+        const decode =  jsonwebtoken.verify(token,process.env.TOKEN_KEY);
         
         if(!decode){
             return res.status(400).json({error:"Token Doesn't Match"});

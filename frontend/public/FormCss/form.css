@@ -1,0 +1,84 @@
+
+.form-cont
+    {
+        width:40%;
+        min-height:70vh;
+        background-color: rgba(26, 108, 216, 0.547);
+        margin-left: 30%;
+        margin-top: 1%;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        align-items: center;
+        box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+    }
+.form-cont h2
+    {
+        background-color: rgb(15, 4, 91);
+        text-align: center;
+        padding: 3px;
+        color: white;
+        
+    }
+.form-cont form
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 3em;
+        padding: 1.5em 1.5em 1.5em 1.5em;
+    }
+.form-cont form input
+    {
+        width: 90%;
+        padding: 3px;
+        height: 20px;
+        outline: 0;
+        font-size: 16px;
+        font-weight: 600;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+.form-cont form label
+    {
+        font-size: 20px;
+        font-weight: 600;
+    }
+.form-cont form button
+    {
+        width: fit-content;
+        padding: 5px 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 15px;
+    }
+.form-cont form .save
+    {
+        background-color: rgb(9, 9, 63);
+        color: white;
+        font-weight: 600;
+        border: 2px solid black;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        box-shadow: 2px 2px 2px 2px black;
+    }
+.form-cont form .ret
+    {
+        background-color: rgb(9, 9, 63);
+        color: white;
+        font-weight: 600;
+        border: 2px solid black;
+        border-radius: 5px;
+        letter-spacing: 1px;
+         box-shadow: 2px 2px 2px 2px black;
+    }
+h1,h2
+    {
+        letter-spacing: 3px;
+    }
+.form-cont form .btn-cont
+    {
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+    }

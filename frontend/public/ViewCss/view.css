@@ -1,0 +1,113 @@
+/* View Styles */
+.view-cont
+    {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+.view-cont h1
+    {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+.inner-cont p strong
+    {
+        letter-spacing: 2px;
+        font-size: 20px;
+        gap: 10px;
+    }
+.det-cont p
+    {
+        display:flex;
+        align-items: center;
+        width: 100%;
+    }
+.inner-cont table
+    {
+        border: 2px solid black;
+        width: 50%;
+        height: 200%;
+        border-radius: 5px;
+    }
+.inner-cont
+    {
+        width: 60%;
+        margin: 3.5% auto 10% 35%;
+    }
+table thead tr th
+    {
+        background-color: rgb(18, 38, 58);
+        padding: 5px;
+        color: white;
+        letter-spacing: 3px;
+        font-size: 20px;
+    }
+table tbody tr td
+    {
+        background-color: rgb(172, 203, 225);
+        padding: 5px;
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        text-align: center;
+        font-weight: 600;
+
+    }
+table tbody tr td strong
+    {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+ .btn
+    {
+        background-color: rgb(9, 9, 63);
+        color: white;
+        width: 9%;
+        font-weight: 900;
+        font-size: 20px;
+        border: 2px solid black;
+        border-radius: 5px;
+        position: absolute;
+        left:44%;
+        bottom:70px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        letter-spacing: 2px;
+        box-shadow: 2px 2px 2px 2px black;
+        cursor: pointer;
+    }
+table tbody tr td:hover
+    {
+        background-color: rgba(172, 203, 225, 0.542);
+        cursor: pointer;
+    }
+ button svg
+    {
+        font-size: 30px;
+    }
+
+    @keyframes shine {
+                    0% {
+                        background-position: 0% 50%;
+                    }
+            
+                    50% {
+                        background-position: 100% 50%;
+                    }
+            
+                    100% {
+                        background-position: 0% 50%;
+                    }
+                }
+            
+                .button-bg {
+                    background: conic-gradient(from 0deg, #00F5FF, #c17db2, #FFD700, #00FF85, #8A2BE2, #00F5FF);
+                    background-size: 300% 300%;
+                    animation: shine 4s ease-out infinite;
+                }

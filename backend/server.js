@@ -52,6 +52,6 @@ app.use("/api/student",stdRouter);
 
 
 app.listen(process.env.PORT,()=>{
-    console.log("Serevr is runs on " + process.env.PORT);
+    console.log("Server is runs on " + process.env.PORT);
     connectDB();
 })
